@@ -144,50 +144,56 @@ export default function App() {
 
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
                   {/* Step 1 */}
-                  <div className="p-4 rounded-xl bg-[#0d1424] border border-slate-800 space-y-1 flex flex-col justify-start">
-                    <div className="w-6 h-6 rounded-md bg-cyan-950/60 border border-cyan-500/40 text-cyan-400 text-xs font-bold flex items-center justify-center font-mono mb-2">
-                      1
+                  <div className="rainbow-border-wrapper flex flex-col">
+                    <div className="p-4 rounded-[11px] bg-[#0d1424] space-y-1 flex flex-col justify-start h-full">
+                      <div className="w-6 h-6 rounded-md bg-cyan-950/60 border border-cyan-500/40 text-cyan-400 text-xs font-bold flex items-center justify-center font-mono mb-2">
+                        1
+                      </div>
+                      <div className="font-bold text-white text-sm">
+                        Sign in to SellPro
+                      </div>
+                      <p className="text-xs text-slate-400 leading-relaxed">
+                        Open the app or visit{' '}
+                        <a
+                          href="https://secure.sellpro.net/public/rep_invitation?token=RqKyV7wZ9a4="
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-cyan-400 hover:text-cyan-300 underline"
+                        >
+                          SellPro
+                        </a>. Navigate to the Googlebook courses or type Googlebook in the search bar to filter eligible content.
+                      </p>
                     </div>
-                    <div className="font-bold text-white text-sm">
-                      Sign in to SellPro
-                    </div>
-                    <p className="text-xs text-slate-400 leading-relaxed">
-                      Open the app or visit{' '}
-                      <a
-                        href="https://secure.sellpro.net/public/rep_invitation?token=RqKyV7wZ9a4="
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-cyan-400 hover:text-cyan-300 underline"
-                      >
-                        SellPro
-                      </a>. Navigate to the Googlebook courses or type Googlebook in the search bar to filter eligible content.
-                    </p>
                   </div>
 
                   {/* Step 2 */}
-                  <div className="p-4 rounded-xl bg-[#0d1424] border border-slate-800 space-y-1">
-                    <div className="w-6 h-6 rounded-md bg-purple-950/60 border border-purple-500/40 text-purple-400 text-xs font-bold flex items-center justify-center font-mono mb-2">
-                      2
+                  <div className="rainbow-border-wrapper flex flex-col">
+                    <div className="p-4 rounded-[11px] bg-[#0d1424] space-y-1 flex flex-col justify-start h-full">
+                      <div className="w-6 h-6 rounded-md bg-purple-950/60 border border-purple-500/40 text-purple-400 text-xs font-bold flex items-center justify-center font-mono mb-2">
+                        2
+                      </div>
+                      <div className="font-bold text-white text-sm">
+                        Complete Courses
+                      </div>
+                      <p className="text-xs text-slate-400 leading-relaxed">
+                        New content drops every week. Engage with and complete available courses on a weekly basis.
+                      </p>
                     </div>
-                    <div className="font-bold text-white text-sm">
-                      Complete Courses
-                    </div>
-                    <p className="text-xs text-slate-400 leading-relaxed">
-                      New content drops every week. Engage with and complete available courses on a weekly basis.
-                    </p>
                   </div>
 
                   {/* Step 3 */}
-                  <div className="p-4 rounded-xl bg-[#0d1424] border border-slate-800 space-y-1">
-                    <div className="w-6 h-6 rounded-md bg-pink-950/60 border border-pink-500/40 text-pink-400 text-xs font-bold flex items-center justify-center font-mono mb-2">
-                      3
+                  <div className="rainbow-border-wrapper flex flex-col">
+                    <div className="p-4 rounded-[11px] bg-[#0d1424] space-y-1 flex flex-col justify-start h-full">
+                      <div className="w-6 h-6 rounded-md bg-pink-950/60 border border-pink-500/40 text-pink-400 text-xs font-bold flex items-center justify-center font-mono mb-2">
+                        3
+                      </div>
+                      <div className="font-bold text-white text-sm">
+                        You're Entered
+                      </div>
+                      <p className="text-xs text-slate-400 leading-relaxed">
+                        Completions automatically enter you into that week's drawing pool.
+                      </p>
                     </div>
-                    <div className="font-bold text-white text-sm">
-                      You're Entered
-                    </div>
-                    <p className="text-xs text-slate-400 leading-relaxed">
-                      Completions automatically enter you into that week's drawing pool.
-                    </p>
                   </div>
                 </div>
               </div>
@@ -366,37 +372,43 @@ export default function App() {
                 </p>
 
                 <div className="flex flex-wrap items-center gap-2.5 pt-1">
-                  <a
-                    href="https://apps.apple.com/us/app/sellpro-mobile-training/id752816884"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg bg-slate-800/70 hover:bg-cyan-950/30 border border-slate-700 hover:border-cyan-500/50 text-xs font-semibold text-slate-200 hover:text-cyan-200 transition-all"
-                  >
-                    <Smartphone className="w-3.5 h-3.5 text-cyan-400" />
-                    <span>Apple App Store</span>
-                    <ArrowUpRight className="w-3.5 h-3.5 text-cyan-400" />
-                  </a>
+                  <div className="rainbow-btn-wrapper group">
+                    <a
+                      href="https://apps.apple.com/us/app/sellpro-mobile-training/id752816884"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-3.5 py-2 rounded-[7px] bg-[#0d1424] hover:bg-[#101726] text-xs font-semibold text-slate-200 hover:text-white transition-colors"
+                    >
+                      <Smartphone className="w-3.5 h-3.5 text-cyan-400 group-hover:scale-110 transition-transform" />
+                      <span>Apple App Store</span>
+                      <ArrowUpRight className="w-3.5 h-3.5 text-slate-400 group-hover:text-cyan-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
+                    </a>
+                  </div>
 
-                  <a
-                    href="https://play.google.com/store/apps/details?id=com.mventix.sellPro"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg bg-slate-800/70 hover:bg-emerald-950/30 border border-slate-700 hover:border-emerald-500/50 text-xs font-semibold text-slate-200 hover:text-emerald-200 transition-all"
-                  >
-                    <Smartphone className="w-3.5 h-3.5 text-emerald-400" />
-                    <span>Google Play Store</span>
-                    <ArrowUpRight className="w-3.5 h-3.5 text-emerald-400" />
-                  </a>
+                  <div className="rainbow-btn-wrapper group">
+                    <a
+                      href="https://play.google.com/store/apps/details?id=com.mventix.sellPro"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-3.5 py-2 rounded-[7px] bg-[#0d1424] hover:bg-[#101726] text-xs font-semibold text-slate-200 hover:text-white transition-colors"
+                    >
+                      <Smartphone className="w-3.5 h-3.5 text-emerald-400 group-hover:scale-110 transition-transform" />
+                      <span>Google Play Store</span>
+                      <ArrowUpRight className="w-3.5 h-3.5 text-slate-400 group-hover:text-emerald-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
+                    </a>
+                  </div>
 
-                  <a
-                    href="https://online.sellpro.net/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg bg-slate-800/70 hover:bg-purple-950/30 border border-slate-700 hover:border-purple-500/50 text-xs font-semibold text-slate-200 hover:text-purple-200 transition-all"
-                  >
-                    <span>SellPro Web Portal</span>
-                    <ArrowUpRight className="w-3.5 h-3.5 text-purple-400" />
-                  </a>
+                  <div className="rainbow-btn-wrapper group">
+                    <a
+                      href="https://online.sellpro.net/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-3.5 py-2 rounded-[7px] bg-[#0d1424] hover:bg-[#101726] text-xs font-semibold text-slate-200 hover:text-white transition-colors"
+                    >
+                      <span>SellPro Web Portal</span>
+                      <ArrowUpRight className="w-3.5 h-3.5 text-slate-400 group-hover:text-purple-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
