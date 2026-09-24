@@ -214,7 +214,7 @@ export default function App() {
                 </div>
 
                 <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                  Winners will each receive a <strong className="text-white font-bold">$10 gift card</strong>. Complete available Googlebook courses in SellPro each week to ensure your eligibility for that week's drawing. Weekly drawings will be active for 6 weeks, ending on October 31st.
+                  Winners will each receive a <strong className="text-white font-bold">$10 gift card</strong>. Complete available Googlebook courses in SellPro each week to ensure your eligibility for that week's drawing. Weekly drawings will be active from September 27th to October 31st in the PlayZone section of SellPro.
                 </p>
               </div>
 
